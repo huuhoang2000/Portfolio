@@ -1,9 +1,6 @@
 * { 
   margin: 0; 
   padding: 0; 
-}
-
-* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -18,7 +15,7 @@ main {
   display: block;
 }
 
-header .navBar {
+header .c-nav {
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -100,7 +97,7 @@ span {
   padding-bottom: 90px;
 }
 
-.About-me {
+.about-me {
   background-color: #2C2F40;
   color: white;
   height: 90vh;
@@ -108,20 +105,20 @@ span {
   
 }
 
-.About-me .left .AboutMe {
+.about-me .left .aboutMe {
   padding: 100px ;
 }
 
-.About-me .AboutMe .c1 {
+.about-me .aboutMe .c1 {
   border-bottom: 2.5px solid #0087E9;
   padding-bottom: 2.5px;
 }
 
-.About-me .left p {
+.about-me .left p {
   padding-top: 15px;
 }
 
-.About-me .c span {
+.about-me .c span {
   font-size: 32px;
 }
 
@@ -135,24 +132,24 @@ h2 {
   height: 500px;
 }
 
-.About-me .left h1 {
+.about-me .left h1 {
   text-align: center;  
 }
 
-.Featured-project {
+.featured-project {
   background-color: #080C20;
   color: white;
   height: 90vh;
 }
 
-.Featured-project .featuredprojectwrapper{
+.featured-project .featuredprojectwrapper{
   display: flex;
   padding: 300px;
   flex-direction: column;
   text-align: center;
 }
 
-.Featured-project .featuredprojectwrapper .c2 {
+.featured-project .featuredprojectwrapper .c2 {
   border-bottom: 2.5px solid #0087E9;
   padding-bottom: 2.5px;
 }
