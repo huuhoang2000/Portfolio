@@ -4,150 +4,116 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link up the css file -->
-  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <title>Portfolio</title>
 </head>
 <body>
-  <header>
-    <div></div>
-      <nav class="c-nav">
-        <div class="c-wrapper">
-          <a href="../HTML/app.html" class="logo">
-              <!-- <p class="logo">Hoa<span>Huu</span>ng</p> -->
-            <img src="../image/HoHuuan.png" alt="logo"></a>
-          <div class="c-social">
-            <ul>
-              <li>
-                <a href="#" class="c-wrapper__link"><img src="../image/🦆 icon _torso_.png" alt="aboutme"></a>
-              </li>
-              <li>
-                <a href="#" class="c-wrapper__link><img src="../image/🦆 icon _home_.png" alt="homepage"></a>
-              </li>
-              <li>
-                <a href="#" class="c-wrapper__link"><img src="../image/🦆 icon _social twitter_.png" alt="twitter"></a>
-              </li>
-              <li>
-                <a href="#" class="c-wrapper__link"><img src="../image/Vector.png" alt="linkedin"></a>
-              </li>
-              <li>
-                <a href="#" class="c-wrapper__link"><img src="../image/🦆 icon _social facebook_.png" alt="facebook"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-  </header>
-  
-  <main>
-    <section class="c-hero">
-      <h2>Introduction</h2>
-
+  <nav class="nav" id="navbar">
+      <ul class="nav-list">
+        <li><a href="#welcome-section" class="nav-link">About</a></li>
+        <li><a href="#Skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
+  </nav>
+  <section id="welcome-section" class="welcome-section">
       <div class="c-main__header">
-        <h1><span style="color:#0087E9">HELLO</span> MY NAME IS <br>
-          HUU HOANG.</h1>
+        <h1><span class="Firstword" style="color:red">HELLO</span> MY NAME IS <br>HUU HOANG.</h1>
+        <p>A Website developer</p>
       </div>
-    </section>
-
-    <section class="c-profile">
-      <!-- two columns -->
-      <div class="c-profile__left">
-        <h2>What I do</h2>
-        <div class="c-profile__left .padding">
-        <h1><span style="color:#0087E9">About me</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus delectus sit dolorem tempore! Incidunt repellat et, illum consequatur, possimus earum, sed dolores hic unde molestiae explicabo vitae voluptate quas odit voluptatem alias maxime non beatae iste provident! Reiciendis modi mollitia dolor, minus dolore magnam omnis ea itaque alias eos labore amet nobis dolorum. Maxime, itaque quod qui perferendis ad consequatur, praesentium quae facilis repudiandae suscipit expedita maiores sit provident nihil. Est doloremque officia voluptatem animi soluta! Architecto enim omnis voluptates, nostrum illum ab velit modi reprehenderit adipisci illo, corporis debitis corrupti magni tenetur dolorum officia ad quidem. Quod, officia temporibus.</p>
+  </section>
+  <section id="Skills" class="skill-section">
+      <h2 class="skills-section-header">What I can do</h2>
+      <div class="skills-grid">
+        <div class="skill skill-tile">
+          <div href="#" class="skill-icon"><i class="fab fa-css3-alt fa-5x"></i></div>
+          <p class="skill-title">CSS3</p>
         </div>
-      </div>
-      <!-- image is the column on the right -->
-      <img class="c-profile__right" src="../image/🦆 icon _torso_main.png" alt="personal portrait">
-    </section>
-
-    <section class="c-projects">
-      <h2>My Projects</h2>
-        <div class="c-projects__wrapper">
-          <h1><span class="c2">Featured Project</span></h1><br>
-          <h3>Project Name</h3>
-          <p>Language used</p> 
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam mollitia qui deleniti accusantium et eligendi perspiciatis atque corrupti ex ipsum!</p>
+        <div class="skill skill-tile">
+          <div href="#" class="skill-icon"><i class="fab fa-figma fa-5x"></i></div>
+          <p class="skill-title">FIGMA</p>
         </div>
-         
-    </section>
-
-    <section class="c-skilltools">
-      <h2>Resume</h2>
-      <div class="c-skilltools__wrapper">
-      <h1><span class="c3">Skills And Tools</span></h1>
-        <div class="skill">
-          <!-- <div class="first-line"> -->
-            <div class="html5">
-              <a href="#" class="skill-list"><img src="../image/🦆 icon _html5_.png" alt="HTML5-icon"></a>
-              <h4>HTML5</h4>
-            </div>
-            <div class="css3">
-              <a href="#" class="skill-list"><img src="../image/🦆 icon _css3_.png" alt="CSS3-icon"></a>
-              <h4>CSS3</h4>
-            </div>
-            <div class="github">
-              <a href="#" class="skill-list"><img src="../image/🦆 icon _social github_.png" alt=""></a>
-              <h4>Github</h4>
-            </div>
-            <div class="react">
-              <a href="#" class="skill-list"><img src="../image/React.png" alt=""></a>
-              <h4>React</h4>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="second-line"> -->
-            <div class="git">
-              <a href="#" class="skill-list"><img src="../image/Git.png" alt=""></a>
-              <h4>Git</h4>
-            </div>
-            <div class="jscript">
-              <a href="#" class="skill-list"><img src="../image/Javascript.png" alt=""></a>
-              <h4>Javascript</h4>
-            </div>
-            <div class="VScode">
-              <a href="#" class="skill-list"><img src="../image/VisualStudioCode.png" alt=""></a>
-              <h4>visual studio codde</h4>
-            </div>
-          <!-- </div>  -->
+        <div class="skill skill-tile">
+          <div href="#" class="skill-icon"><i class="fab fa-git-alt fa-5x"></i></div>
+          <p class="skill-title">GITS</p>
+        </div>
+        <div class="skill skill-tile">
+          <div href="#" class="skill-icon"><i class="fab fa-html5 fa-5x"></i></div>
+          <p class="skill-title">HTML5</p>
+        </div>
+        <div class="skill skill-tile">
+          <div href="#" class="skill-icon"><i class="fab fa-java fa-5x"></i></div>
+          <p class="skill-title">JAVA</p>
+        </div>
+        <div class="skill skill-tile">
+          <div href="#" class="skill-icon"><i class="fab fa-js-square fa-5x"></i></div>
+          <p class="skill-title">JAVASCRIPT</p>
+        </div>
+        <div class="skill skill-tile">
+          <div href="#" class="skill-icon"><i class="fas fa-database fa-5x"></i></div>
+          <p class="skill-title">SQLSERVER</p>
+        </div>
+        <div class="skill skill-tile">
+          <div href="#" class="skill-icon"><i class="fas fa-server fa-5x"></i></div>
+          <p class="skill-title">ORACLE</p>
         </div>
       </div>
-    </section>
-  <section class="contact flexcontainer" id="contact">
-    <div class="contact">
-      <div class="wrapper flexcontainer">
-        <div class="title">
-          <h2>Contact</h2>
-        </div>
-        <div class="innerWrapper">
-          <div class="getInTouch">
-            <h1 class="GITtitle">Get In Touch</h1>
-          
-              <form action="POST" method="post">
-                <div class="formName">
-                  <label for="name" class="sr-only">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Name*" required>
-                </div>
-                <div class="formEmail">
-                  <label for="email" class="sr-only">Email</label>
-                  <input type="text" id="email" name="email" placeholder="Email*" required>
-                </div>
-                <div class="formSubject">
-                  <label for="subject" class="sr-only">Subject</label>
-                  <input type="text" id="subject" name="subject" placeholder="Subject (Optional)" required>
-                </div>
-                <div class="formMessage">
-                  <label for="message" class="sr-only">Message</label>
-                  <textarea type="message" id="message" name="message" placeholder="Message*" required></textarea>
-                </div>
-                <input type="Submit">
-              </form>
-          </div>
-        </div>
-      </div>
+  </section>
+  <section id="projects" class="project-section">
+    <h2 class="projects-section-header">These are some of my projects</h2>
+    <div class="projects-grid">
+      <a href="#">
+        <!-- <img src="" class="project-img" alt=""> -->
+        <i class="fas fa-user-alt  fa-5x projimg project-tile"></i>
+        <p class="project-title">Some random project</p>
+      </a>
+      <a href="#">
+        <!-- <img src="" class="project-img" alt=""> -->
+        <i class="fas fa-user-alt  fa-5x projimg"></i>
+        <p class="project-title">Some random project</p>
+      </a>
+      <a href="#">
+        <!-- <img src="" class="project-img" alt=""> -->
+        <i class="fas fa-user-alt  fa-5x projimg"></i>
+        <p class="project-title">Some random project</p>
+      </a>
+      <a href="#">
+        <!-- <img src="" class="project-img" alt=""> -->
+        <i class="fas fa-user-alt  fa-5x projimg"></i>
+        <p class="project-title">Some random project</p>
+      </a>
     </div>
-    </section>
-  </main>
+</section>  
+  <section id="Contact" class="contact-section"> 
+    <div class="contact-section-header">
+      <h2>Let's work to improve ourselves together</h2>
+      <p>How do you like your drink?</p>
+    </div>
+    <div class="contact-links">
+      <a href="" target="_blank" class="btn contact-details">
+        <i class="fab fa-facebook"></i> Facebook  
+      </a>
+      <a id="profile-link" href="" target="_blank" class="btn contact-details">
+        <i class="fab fa-github"></i> Github
+      </a>
+      <a href="" target="_blank" class="btn contact-details">
+        <i class="fab fa-linkedin"></i> Linkedin
+      </a>
+      <a href="" class="btn contact-details">
+        <i class="fas fa-at"></i> Send a Mail
+      </a>
+      <a href="" class="btn contact-details">
+        <i class="fas fa-mobile contact5"></i> Call me
+      </a>
+    </div>  
+  </section>
+  <footer>
+    <p>
+      *This is a portfolio still underconstruction. More information will be added to the portfolio.
+    </p>
+  </footer>
 </body>
 </html>
