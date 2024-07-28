@@ -8,112 +8,376 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mediaqueries.css">
   <title>Portfolio</title>
 </head>
 <body>
-  <nav class="nav" id="navbar">
-      <ul class="nav-list">
-        <li><a href="#welcome-section" class="nav-link">About</a></li>
-        <li><a href="#Skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#Contact" class="nav-link">Contact</a></li>
-      </ul>
+  <nav id="desktop-nav">
+      <div class="logo">Huu Hoang Chinh</div>
+      <div class="main-menu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>  
+      </div>
   </nav>
-  <section id="welcome-section" class="welcome-section">
-      <div class="c-main__header">
-        <h1><span class="Firstword" style="color:red">HELLO</span> MY NAME IS <br>HUU HOANG.</h1>
-        <p>A Website developer</p>
-      </div>
-  </section>
-  <section id="Skills" class="skill-section">
-      <h2 class="skills-section-header">What I can do</h2>
-      <div class="skills-grid">
-        <div class="skill skill-tile">
-          <div href="#" class="skill-icon"><i class="fab fa-css3-alt fa-5x"></i></div>
-          <p class="skill-title">CSS3</p>
+  <nav id="hamburger-nav">
+      <div class="logo">Huu Hoang Chinh</div>
+      <div  class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="skill skill-tile">
-          <div href="#" class="skill-icon"><i class="fab fa-figma fa-5x"></i></div>
-          <p class="skill-title">FIGMA</p>
-        </div>
-        <div class="skill skill-tile">
-          <div href="#" class="skill-icon"><i class="fab fa-git-alt fa-5x"></i></div>
-          <p class="skill-title">GITS</p>
-        </div>
-        <div class="skill skill-tile">
-          <div href="#" class="skill-icon"><i class="fab fa-html5 fa-5x"></i></div>
-          <p class="skill-title">HTML5</p>
-        </div>
-        <div class="skill skill-tile">
-          <div href="#" class="skill-icon"><i class="fab fa-java fa-5x"></i></div>
-          <p class="skill-title">JAVA</p>
-        </div>
-        <div class="skill skill-tile">
-          <div href="#" class="skill-icon"><i class="fab fa-js-square fa-5x"></i></div>
-          <p class="skill-title">JAVASCRIPT</p>
-        </div>
-        <div class="skill skill-tile">
-          <div href="#" class="skill-icon"><i class="fas fa-database fa-5x"></i></div>
-          <p class="skill-title">SQLSERVER</p>
-        </div>
-        <div class="skill skill-tile">
-          <div href="#" class="skill-icon"><i class="fas fa-server fa-5x"></i></div>
-          <p class="skill-title">ORACLE</p>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
         </div>
       </div>
+  </nav>
+  <section id="profile" class="welcome-section">
+      <div class="section__pic-container">
+        <img src="./assets/profile-img-01.jpg" alt="Huu Hoang profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, my name is</p>
+        <h1 class="title">Huu Chinh Hoang</h1>
+        <p class="section__text__p2">Frontend Website developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Huu_Hoang_Resume_IT.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img 
+            src="./assets/linkedin.png" 
+            alt="My linkedIn Profile"
+            class="icon" 
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img 
+            src="./assets/github.png" 
+            alt="My Github Accout"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
   </section>
-  <section id="projects" class="project-section">
-    <h2 class="projects-section-header">These are some of my projects</h2>
-    <div class="projects-grid">
-      <a href="#">
-        <!-- <img src="" class="project-img" alt=""> -->
-        <i class="fas fa-user-alt  fa-5x projimg project-tile"></i>
-        <p class="project-title">Some random project</p>
-      </a>
-      <a href="#">
-        <!-- <img src="" class="project-img" alt=""> -->
-        <i class="fas fa-user-alt  fa-5x projimg"></i>
-        <p class="project-title">Some random project</p>
-      </a>
-      <a href="#">
-        <!-- <img src="" class="project-img" alt=""> -->
-        <i class="fas fa-user-alt  fa-5x projimg"></i>
-        <p class="project-title">Some random project</p>
-      </a>
-      <a href="#">
-        <!-- <img src="" class="project-img" alt=""> -->
-        <i class="fas fa-user-alt  fa-5x projimg"></i>
-        <p class="project-title">Some random project</p>
-      </a>
+  <section id="about">
+    <p class="section__text__p1">Get to know more</p>
+    <h1 class="title">About me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img 
+          src="./assets/education.png" 
+          alt="profile-picture" 
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img 
+              src="./assets/experience.png" 
+              alt="experience icon"
+              class="icon"  
+            />
+            <h3>Experience</h3>
+            <p><br>Near one year <br/> Frontend Development </p>
+          </div>  
+          <div class="details-container">
+            <img 
+              src="./assets/education.png" 
+              alt="education icon"
+              class="icon"  
+            />
+            <h3>Education</h3>
+            <p><br>B.Sc. Bachelor Degree 2020 - 2022 - University of Lethbridge
+            <br/>Diploma 2018 - 2020 - Southern Alberta Institute of Technology </p>
+          </div>  
+        </div>
+        <div class="text-container">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla voluptas laudantium 
+            praesentium soluta facilis harum. Ratione, unde inventore minus adipisci quis pariatur alias! 
+            Hic porro in ab ex fugit quam repellendus! Eaque reprehenderit, id dolorum recusandae, laborum 
+            velit aliquid nam cumque nobis impedit asperiores ratione totam voluptatem provident repudiandae 
+            quibusdam mollitia reiciendis ut exercitationem. Laboriosam mollitia nisi iusto assumenda voluptatibus 
+            veniam iste deleniti necessitatibus maiores, voluptates, incidunt molestiae ullam sapiente iure rerum 
+            quasi beatae commodi itaque ipsum. Eos unde, perferendis dolor, aperiam minima possimus magnam fugit 
+            est, iusto expedita dignissimos fugiat omnis optio eligendi temporibus asperiores officia sed. Delectus.
+          </p>
+        </div>
+      </div>
     </div>
-</section>  
-  <section id="Contact" class="contact-section"> 
-    <div class="contact-section-header">
-      <h2>Let's work to improve ourselves together</h2>
-      <p>How do you like your drink?</p>
+    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+    onclick="location.href='./#experience'"
+    />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>SASS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Material UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="contact-links">
-      <a href="" target="_blank" class="btn contact-details">
-        <i class="fab fa-facebook"></i> Facebook  
-      </a>
-      <a id="profile-link" href="" target="_blank" class="btn contact-details">
-        <i class="fab fa-github"></i> Github
-      </a>
-      <a href="" target="_blank" class="btn contact-details">
-        <i class="fab fa-linkedin"></i> Linkedin
-      </a>
-      <a href="" class="btn contact-details">
-        <i class="fas fa-at"></i> Send a Mail
-      </a>
-      <a href="" class="btn contact-details">
-        <i class="fas fa-mobile contact5"></i> Call me
-      </a>
-    </div>  
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-2.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-3.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:chinhhuu2000@gmail.com">chinhhuu2000@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
   </section>
   <footer>
-    <p>
-      *This is a portfolio still underconstruction. More information will be added to the portfolio.
-    </p>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Huu Chinh Hoang. All Rights Reserved.</p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
